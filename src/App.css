@@ -1,149 +1,172 @@
+/* Base styles for the body */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #808080 50%, #f0f0f0 50%);
-  height: 100vh;
+  background: linear-gradient(to right, #808080 50%, #f0f0f0 50%); /* Gradient background */
+  height: 100vh; /* Full viewport height */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
+/* Container that holds the main content */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  margin-top: 50px;
-  background: linear-gradient(to right, #ffffff 50%, #ffefd5 50%);
-  border-radius: 10px;
-  overflow: hidden;
+  width: 90%;
+  max-width: 1640px; /* Maximum width of the container */
+  display: flex; /* Flexbox layout */
+  margin-top: 30px; /* Space from the top */
+  background: linear-gradient(to right, #ffffff 50%, #ffefd5 50%); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
 }
 
+/* Left side of the container */
 .left-side {
-  flex: 1;
-  padding: 20px;
+  flex: 1; /* Take up available space */
+  padding: 20px; /* Padding inside the element */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Vertical layout */
 }
 
+/* Styling for text list in the left side */
 .text-list {
-  font-weight: bold;
-  color: #333;
-  display: flex;
-  align-items: center;
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
 }
 
 .text-list span {
-  margin-right: 2px; 
+  margin-right: 2px; /* Space between icon and text */
 }
 
+.text-list p {
+  display: flex; /* Flexbox layout */
+  gap: 20px; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+/* Product title styling */
 .product-title {
-  margin-top: 20px;
-  font-weight: normal;
-  color: grey;
+  margin-top: 20px; /* Space from top */
+  font-weight: normal; /* Normal text weight */
+  color: grey; /* Grey text color */
 }
 
+/* Grey text styling */
 .grey-text {
-  color: grey; 
-  font-weight: normal; 
+  color: grey; /* Grey text color */
+  font-weight: normal; /* Normal text weight */
 }
 
+/* Product description styling */
 .product-description {
-  margin-top: 10px;
-  color: grey;
+  margin-top: 10px; /* Space from top */
+  color: grey; /* Grey text color */
 }
 
+/* Button container styling */
 .button-container {
-  display: flex;
-  margin-top: 20px;
+  display: flex; /* Flexbox layout */
+  margin-top: 20px; /* Space from top */
 }
 
+/* Styling for buttons */
 .white-button,
 .black-button {
-  flex: 1;
-  padding: 10px;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 14px; 
-  cursor: pointer; /* Ensure buttons are clickable */
+  flex: 1; /* Equal width */
+  padding: 10px; /* Padding inside the button */
+  border-radius: 3px; /* Rounded corners */
+  text-align: center; /* Center text */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
 }
 
+/* White button styling */
 .white-button {
-  background-color: #ffffff;
-  border: 1px solid black;
-  color: #333; 
+  background-color: #ffffff; /* White background */
+  border: 1px solid black; /* Black border */
+  color: #333; /* Dark text color */
 }
 
 .white-button:hover {
-  background-color: #f0f0f0; /* Change background color on hover */
+  background-color: #f0f0f0; /* Light grey background on hover */
 }
 
+/* Black button styling */
 .black-button {
-  background-color: #000000;
-  color: #ffffff;
-  font-weight: bold;
-  border: 1px solid black;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text color */
+  font-weight: bold; /* Bold text */
+  border: 1px solid black; /* Black border */
 }
 
 .black-button:hover {
-  background-color: #333333; /* Change background color on hover */
+  background-color: #333333; /* Darker background on hover */
 }
 
+/* Right side of the container */
 .right-side {
-  flex: 1;
-  padding: 20px;
-  position: relative; 
-  background-color: lightgrey; 
+  flex: 1; /* Take up available space */
+  padding: 20px; /* Padding inside the element */
+  position: relative; /* Relative positioning for child elements */
+  background-color: lightgrey; /* Light grey background */
 }
 
+/* Search container styling */
 .search-container {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  color: #333;
-  background-color: #f0f0f0; 
-  padding: 10px; 
-  border-radius: 5px;
-  cursor: pointer; /* Ensure search is clickable */
+  top: 20px; /* Space from top */
+  right: 20px; /* Space from right */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  color: #333; /* Dark text color */
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 10px; /* Padding inside the container */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
 }
 
 .search-container:hover {
-  background-color: #e0e0e0; /* Change background color on hover */
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
   transform: scale(1.05); /* Slightly scale up on hover */
 }
 
+/* Cream container styling */
 .cream-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Vertical layout */
+  align-items: center; /* Center items horizontally */
 }
 
+/* Grey container styling */
 .grey-container {
-  position: relative;
-  max-width: 100%; 
-  margin-top: 50px;
+  position: relative; /* Relative positioning for child elements */
+  max-width: 100%; /* Full width */
+  margin-top: 50px; /* Space from top */
 }
 
 .grey-container img {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%; /* Ensure image fits within container */
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Social icons styling */
 .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  margin-top: 10px;
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to start */
+  margin-top: 10px; /* Space from top */
 }
 
+/* Social icons links styling */
 .social-icons a {
-  font-size: 20px;
-  margin-right: 10px;
-  color: #333; /* Default color */
+  font-size: 20px; /* Font size */
+  margin-right: 10px; /* Space between icons */
+  color: #333; /* Dark text color */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s, transform 0.1s; /* Smooth transitions */
 }
@@ -157,25 +180,27 @@ body {
   transform: scale(0.95); /* Scale down slightly on click */
 }
 
+/* Love emoji styling */
 .love-emoji {
-  font-size: 24px;
-  margin-top: 10px;
-  color: black; 
+  font-size: 24px; /* Font size */
+  margin-top: 10px; /* Space from top */
+  color: black; /* Black text color */
 }
 
+/* Video button styling */
 .video-button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center in both directions */
+  width: 60px; /* Button width */
+  height: 60px; /* Button height */
+  border-radius: 50%; /* Circular button */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
 }
 
@@ -184,238 +209,91 @@ body {
   transform: scale(1.1); /* Slightly scale up on hover */
 }
 
+/* Video button icon styling */
 .video-button::before {
   content: "";
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 15px 0 15px 25px;
-  border-color: transparent transparent transparent white;
+  border-width: 15px 0 15px 25px; /* Triangle shape */
+  border-color: transparent transparent transparent white; /* White triangle */
 }
 
 /* Media Queries */
+
+/* For screens larger than 1400px */
 @media (min-width: 1400px) {
   .container {
-    max-width: 1400px;
+    max-width: 1400px; /* Increase max-width */
   }
 }
 
+/* For screens smaller than or equal to 1120px */
 @media (max-width: 1120px) {
   .container {
-    max-width: 1120px;
+    max-width: 1120px; /* Adjust max-width */
   }
 }
 
+/* For screens smaller than or equal to 980px */
 @media (max-width: 980px) {
   .container {
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
   }
 
   .left-side, .right-side {
-    flex: none;
-    width: 100%;
+    flex: none; /* Remove flex growth */
+    width: 100%; /* Full width */
   }
 
   .grey-container img {
-    max-width: 90%;
+    max-width: 90%; /* Adjust image size */
   }
 }
 
+/* For screens smaller than or equal to 940px */
 @media (max-width: 940px) {
   .container {
-    max-width: 940px;
+    max-width: 940px; /* Adjust max-width */
   }
 }
 
+/* For screens smaller than or equal to 912px */
 @media (max-width: 912px) {
   .container {
-    max-width: 912px;
+    max-width: 912px; /* Adjust max-width */
   }
 }
 
+/* For screens smaller than or equal to 880px */
 @media (max-width: 880px) {
   .button-container {
-    flex-direction: column;
+    flex-direction: column; /* Stack buttons vertically */
   }
 
   .white-button, .black-button {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between buttons */
   }
 }
 
+/* For screens smaller than or equal to 840px */
 @media (max-width: 840px) {
   .container {
-    max-width: 840px;
+    max-width: 840px; /* Adjust max-width */
   }
 }
 
-@media (max-width: 812px) {
-  .container {
-    max-width: 812px;
+/* For screens smaller than or equal to 800px */
+@media (max-width: 800px) {
+  .text-list {
+    flex-direction: column; /* Stack text items vertically */
   }
 }
 
-@media (max-width: 780px) {
-  .search-container {
-    top: 10px;
-    right: 10px;
+/* For screens smaller than or equal to 760px */
+@media (max-width: 760px) {
+  .text-list p {
+    flex-direction: column; /* Stack text items vertically */
   }
 }
-
-@media (max-width: 740px) {
-  .container {
-    max-width: 740px;
-  }
-}
-
-@media (max-width: 712px) {
-  .container {
-    max-width: 712px;
-  }
-}
-
-@media (max-width: 680px) {
-  .container {
-    max-width: 680px;
-  }
-}
-
-@media (max-width: 640px) {
-  .social-icons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-icons a {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 612px) {
-  .container {
-    max-width: 612px;
-  }
-}
-
-@media (max-width: 580px) {
-  .container {
-    max-width: 580px;
-  }
-}
-
-@media (max-width: 540px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (max-width: 512px) {
-  .container {
-    max-width: 512px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media (max-width: 440px) {
-  .container {
-    max-width: 440px;
-  }
-}
-
-@media (max-width: 412px) {
-  .container {
-    max-width: 412px;
-  }
-}
-
-@media (max-width: 380px) {
-  .container {
-    max-width: 380px;
-  }
-}
-
-@media (max-width: 360px) {
-  .container {
-    max-width: 360px;
-  }
-}
-
-@media (max-width: 340px) {
-  .container {
-    max-width: 340px;
-  }
-}
-
-@media (max-width: 312px) {
-  .container {
-    max-width: 312px;
-  }
-}
-
-/* Device-Specific Media Queries */
-@media (max-device-width: 320px) { /* iPhone SE (1st Gen) */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 414px) { /* iPhone XR */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 390px) { /* iPhone 12 Pro */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 430px) { /* iPhone 14 Pro Max */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 412px) { /* Pixel 7 */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 1440px) { /* Samsung Galaxy S20 Ultra */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 360px) { /* Samsung Galaxy S8+ */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 768px) { /* iPad Mini */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 810px) { /* iPad Air */
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-device-width: 1366px) { /* iPad Pro */
-  .container {
-    max-width: 100%;
-  }
-}
-
