@@ -187,38 +187,6 @@ body {
   color: black; /* Black text color */
 }
 
-/* Video button styling */
-.video-button {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center in both directions */
-  width: 60px; /* Button width */
-  height: 60px; /* Button height */
-  border-radius: 50%; /* Circular button */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  display: flex; /* Flexbox layout */
-  justify-content: center; /* Center icon horizontally */
-  align-items: center; /* Center icon vertically */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
-}
-
-.video-button:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
-  transform: scale(1.1); /* Slightly scale up on hover */
-}
-
-/* Video button icon styling */
-.video-button::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 25px; /* Triangle shape */
-  border-color: transparent transparent transparent white; /* White triangle */
-}
-
 /* Media Queries */
 
 /* For screens larger than 1400px */
