@@ -115,7 +115,6 @@ body {
   gap: 0; /* No gap between buttons */
 }
 
-
 /* Right side of the container */
 .right-side {
   flex: 1; /* Take up available space */
@@ -158,9 +157,26 @@ body {
   margin-top: 50px; /* Space from top */
 }
 
+/* Positioning the caption behind the image */
+.grey-container p.grey-text {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 0; /* Align to left edge */
+  width: 50%; /* Half of the container width */
+  font-size: 2em; /* Adjust font size as needed */
+  font-weight: bold; /* Bold text */
+  color: grey; /* Grey text color */
+  text-align: center; /* Center text horizontally */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 1; /* Ensure text is behind image */
+  pointer-events: none; /* Prevent text from blocking interactions */
+}
+
 .grey-container img {
   max-width: 100%; /* Ensure image fits within container */
   height: auto; /* Maintain aspect ratio */
+  position: relative; /* Ensure the image is above the text */
+  z-index: 0; /* Ensure image is above text */
 }
 
 /* Social icons styling */
@@ -255,50 +271,13 @@ body {
 }
 
 /* For screens between 840px and 800px */
-@media (max-width: 840px) and (min-width: 760px) {
-  .container {
-    max-width: 840px; /* Adjust max-width */
-  }
-}
-
-/* For screens between 800px and 760px */
-@media (max-width: 800px) {
-  .text-list {
-    flex-direction: column; /* Stack text items vertically */
-  }
-}
-
-/* For screens between 760px and 720px */
-@media (max-width: 760px) and (min-width: 720px) {
-  .text-list p {
-    flex-direction: column; /* Stack text items vertically */
-  }
-}
-
-/* For screens smaller than or equal to 720px */
-@media (max-width: 720px) {
-  .container {
-    max-width: 720px; /* Adjust max-width */
-  }
-
-  .left-side, .right-side {
-    padding: 10px; /* Reduced padding */
-  }
-}
-
-/* For screens smaller than or equal to 600px */
-@media (max-width: 600px) {
-  body {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .container {
-    max-width: 100%;
-    padding: 10px;
-  }
-
+@media (max-width: 840px) and (min-width: 800px) {
   .button-container {
-    width: 100%;
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .white-button, .black-button {
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between buttons */
   }
 }
