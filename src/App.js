@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const sofaImage = 'https://img.freepik.com/free-psd/two-seater-gray-sofa-with-two-cushions-isolated_176382-98.jpg?t=st=1720381198~exp=1720384798~hmac=b5d6dd5f0366931700a9ba840300d736debde534d120324f19011dc52d1aa4ad&w=1380';
 
@@ -14,7 +15,7 @@ function App() {
           <div>
             <p className="product-title">Sofa</p>
             <p className="product-description grey-text">Brown</p>
-           
+          
             <p><strong>Pasadena Sofa</strong></p>
             <p>Two USB ports bring the sofa into the 21st</p>
             <p>century allowing you to easily charge your phone</p>
@@ -25,20 +26,20 @@ function App() {
             </div>
             <div className="social-icons">
               <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" aria-label="Google">
-                <span role="img" aria-label="google">🔍</span>
+                <i className="fab fa-google"></i>
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <span role="img" aria-label="twitter">🐦</span>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <span role="img" aria-label="facebook">📘</span>
+                <i className="fab fa-facebook-f"></i>
               </a>
             </div>
           </div>
         </div>
         <div className="right-side">
           <div className="search-container">
-            <span>Search </span><span role="img" aria-label="search">🔍</span>
+            <span>Search </span><i className="fas fa-search"></i>
           </div>
           <div className="cream-container">
             <div className="grey-container">
