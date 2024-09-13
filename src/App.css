@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #808080 50%, #f0f0f0 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin-top: 50px;
+  background: linear-gradient(to right, #ffffff 50%, #ffefd5 50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-list {
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.text-list span {
+  margin-right: 2px; 
+}
+
+.product-title {
+  margin-top: 20px;
+  font-weight: normal;
+  color: grey;
+}
+
+.grey-text {
+  color: grey; 
+  font-weight: normal; 
+}
+
+.product-description {
+  margin-top: 10px;
+  color: grey;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.white-button,
+.black-button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px; 
+  cursor: pointer; /* Ensure buttons are clickable */
+  transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.white-button {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: #333; 
+}
+
+.white-button:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.black-button {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.black-button:hover {
+  background-color: #333333; /* Change background color on hover */
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+  position: relative; 
+  background-color: lightgrey; 
+}
+
+.search-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-radius: 5px;
+  cursor: pointer; /* Ensure search is clickable */
+  transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.search-container:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.cream-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grey-container {
+  position: relative;
+  max-width: 100%; 
+  margin-top: 50px;
+}
+
+.grey-container img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #333; /* Default color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.social-icons a:active {
+  transform: scale(0.95); /* Scale down slightly on click */
+}
+
+.love-emoji {
+  font-size: 24px;
+  margin-top: 10px;
+  color: black; 
+}
+
+.video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Smooth transitions */
+}
+
+.video-button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.video-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Media Queries */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media (max-width: 980px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    flex: none;
+    width: 100%;
+  }
+
+  .grey-container img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    max-width: 912px;
+  }
+}
+
+@media (max-width: 880px) {
+  .button-container {
+    flex-direction: column;
+  }
+
+  .white-button, .black-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 812px) {
+  .container {
+    max-width: 812px;
+  }
+}
+
+@media (max-width: 780px) {
+  .search-container {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 712px) {
+  .container {
+    max-width: 712px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons a {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 612px) {
+  .container {
+    max-width: 612px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 512px) {
+  .container {
+    max-width: 512px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 412px) {
+  .container {
+    max-width: 412px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 340px) {
+  .container {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 312px) {
+  .container {
+    max-width: 312px;
+  }
+}
+
+/* Device-Specific Media Queries */
+@media (max-device-width: 320px) { /* iPhone SE (1st Gen) */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 414px) { /* iPhone XR */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 390px) { /* iPhone 12 Pro */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 430px) { /* iPhone 14 Pro Max */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 412px) { /* Pixel 7 */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 1440px) { /* Samsung Galaxy S20 Ultra */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 360px) { /* Samsung Galaxy S8+ */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 768px) { /* iPad Mini */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 810px) { /* iPad Air */
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-device-width: 1366px) { /* iPad Pro */
+  .container {
+    max-width: 100%;
+  }
+}
+
