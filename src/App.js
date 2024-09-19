@@ -65,7 +65,9 @@ function App() {
           <div className="cream-container">
             <div className="grey-container">
               {/* Caption for the image */}
-              <p className="grey-text-capsule">CAPSULE</p>
+              <div className="branding">
+        <h1>CAPSULE</h1>
+      </div>
               {/* Image of the sofa */}
               <img src={sofaImage} alt="Sofa" />
               {/* Decorative love emoji */}
@@ -81,6 +83,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
