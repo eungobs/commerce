@@ -3,6 +3,8 @@ Professional Furniture Store Web Application
 Overview
 This project is a web application developed using React.js, designed to showcase and manage a furniture store's products. The application features a responsive layout that adjusts to various screen sizes, including popular devices. It includes functionalities such as clickable buttons, interactive social media icons, and a search feature.
 
+Demo link:https://roaring-genie-69241e.netlify.app/
+
 Features
 Responsive Design: The application adapts to different screen sizes and devices.
 Interactive Elements: Clickable buttons, hover effects, and social media icons.
